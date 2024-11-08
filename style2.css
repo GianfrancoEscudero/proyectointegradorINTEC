@@ -1,0 +1,337 @@
+*{
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style:normal;
+}
+/* Cambia el fondo de la lista desplegable */
+.navbar .dropdown-menu {
+  background-color: #1498EB; /* Usa el mismo color que el navbar */
+  border: none; /* Elimina el borde */
+}
+
+/* Cambia el color del texto en los elementos del dropdown */
+.navbar .dropdown-item {
+  color: white; /* Ajusta el color del texto si es necesario */
+}
+
+/* Cambia el color de fondo cuando el cursor está sobre un elemento del dropdown */
+.navbar .dropdown-item:hover {
+  background-color: #7face1; /* Un color ligeramente más oscuro para indicar el hover */
+  color: white; /* Mantén el texto en blanco para mejor visibilidad */
+}
+.navbar .dropdown-toggle::after {
+  display: none;
+}
+#cartas{
+color: white;
+display: inline;
+}
+.card {
+margin: 10px;
+}
+#testimonio{
+ /* background-color: #D2DDDF;*/
+  color: #3E72D6;
+  font-size: 26px;
+  font-weight: bold;
+  display:inline-flex;
+}
+#logo{
+border-radius:15%
+}
+/*
+.card-img-top{
+width: 300px;
+height: 200px;
+}
+*/
+#navintec{
+background-color: #7FACE1 !important;
+}
+#colornav{
+color: white;
+font-weight: bold;
+}
+
+#colornav1{
+color: white;
+font-weight: bold;
+}
+#colornav:hover {
+  color: #1498EB; 
+  text-decoration: underline; 
+}
+
+#logo {
+  margin-left: 10px;
+}
+
+#foter {
+  background-color: #3E72D6;
+}
+
+#botonfoter {
+  background-color: #D2DDDF;
+  color: #3E72D6;
+  font-weight: bold;
+}
+
+#botonfoter:hover {
+  background-color: #0d0d0d;
+  color: #3E72D6;
+  font-weight: bold;
+}
+
+.iconos {
+  font-size: 31px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #D2DDDF;
+  color: #3E72D6;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.iconos:hover {
+  background-color: #d9d9d9;
+  color: #000000;
+}
+.iconos1:hover {
+background-color: #000000;
+  color: #3E72D6;
+}
+
+
+.iconos1 {
+  font-size: 35px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #D2DDDF;
+  color: #3E72D6;
+  width: 75px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+.card {
+    border: none;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #0056b3;
+    font-size: 1.2em;
+}
+
+.card-text {
+    font-size: 1em;
+    color: #555;
+    font-weight: normal;
+}
+
+
+#main-container {       /*ancho del div general*/
+    max-width: 1200px;
+    padding-bottom: 20px;
+}
+
+#main-title {
+    color: #3E72D6;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#main-description {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #3e72d6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section-title { /*titulo*/
+    background-color: #1498eb;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+#basics-content .card,
+#frontend-content .card,
+#backend-content .card {
+    border: none;
+    background-color: #4D72D6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+
+}
+
+#basics-content .card:hover,
+#frontend-content .card:hover,
+#backend-content .card:hover {
+    transform: translateY(-5px);
+}
+
+#frontend-content .card{
+    background-color:#fff;
+}
+
+
+#frontend-content img,
+#backend-content img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#frontend-content p,
+#backend-content p, #basics-content p {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: white;
+}
+#frontend-content p{
+    color:#4D72D6;
+}
+.section-content {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+.overlay-gradient {
+width: 100%;
+padding: 10px;
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0) 70% ); /*top*/
+text-align: center;
+}
+/*
+#other-courses-content .btn-primary {
+    background-color: #0099ff;
+    border: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    font-size: 0.9em;
+}
+
+#other-courses-content .btn-primary:hover {
+    background-color: #007acc;
+}
+
+
+#other-courses-content .img-fluid {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#section-other-courses + #other-courses-content {
+    justify-content: center;
+}
+
+#other-courses-content .col-md-4 {
+    margin-bottom: 20px;}
+
+#other-courses-content .btn-primary {
+    background-color: #0099ff;
+    border: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    font-size: 0.9em;
+}
+
+#other-courses-content .btn-primary:hover {
+    background-color: #007acc;
+}
+
+#other-courses-content .img-fluid {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#section-other-courses + #other-courses-content {
+    justify-content: center;
+}
+
+#other-courses-content .col-md-4 {
+    margin-bottom: 20px;
+}
+*/
+/*
+#logica-programacion-card {
+    background-color: #383b3e; 
+    color: #050505; 
+    padding: 15px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}*/
+.section-title {
+    background-color: #1498eb;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8em; /* Aumenta el tamaño de fuente aquí */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.card img {
+    width: 80%; /* Reduce el ancho al 80% del contenedor */
+    height: auto;
+    margin-bottom: 15px;
+}
+/* Centra y limita el tamaño de las imágenes SVG */
+.svg-img {
+    width: 70%; /* Ajusta el ancho para mantener proporciones */
+    height: auto;
+    display: block; /* Cambia a bloque para centrar en flex-container */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+}
+
+/* Ajuste de la tarjeta para alinear correctamente el contenido */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea el contenido en el centro */
+    border: none;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.card-body {
+    text-align: center;
+    padding: 15px;
+}
