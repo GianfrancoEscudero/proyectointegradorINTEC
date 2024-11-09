@@ -68,3 +68,38 @@
 .navbar .dropdown-toggle::after {
   display: none;
 }
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 576px) { /* Ajuste para pantallas más pequeñas, típicamente móviles */
+  #logo {
+    width: 90px; /* Reduce el tamaño del logo */
+    height: 60px;
+  }
+
+  #colornav1 {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  /* Ajusta el botón de hamburguesa y su alineación */
+  #hamburger-toggler {
+    margin-left: auto;
+  }
+
+  /* Modifica el menú colapsado para pantallas más pequeñas */
+  .navbar-collapse {
+
+    padding: 15px;
+  }
+
+  /* Ajusta el estilo de los enlaces en dispositivos móviles */
+  .navbar-nav .nav-link {
+    color: white !important;
+    font-size: 14px;
+    padding: 8px 0; /* Reduce el espaciado */
+  }
+
+  .navbar-nav {
+    text-align: center; /* Centra el texto en el menú desplegable */
+  }
+}
