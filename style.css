@@ -5,6 +5,19 @@
 }
 
 
+#colornav1{
+color: white;
+font-weight: bold;
+}
+#colornav{
+  color: white;
+  font-weight: bold;
+}
+
+#colornav:hover {
+  color: black; /* Cambia el color al hacer hover */
+
+}
 .navbar .dropdown-menu {
   background-color: #1498EB; 
   border: none; /* Elimina el borde */
@@ -22,66 +35,6 @@
 }
 .navbar .dropdown-toggle::after {
   display: none;
-}
-
-/* Ajustes para dispositivos móviles */
-@media (max-width: 767px) {
-  #logo {
-    width: 100px;
-    height: 60px;
-  }
-
-  /* Ajustes del texto en dispositivos pequeños */
-  #colornav1 {
-    font-size: 14px;
-    text-align: center;
-    line-height: 1.2;
-  }
-
-  /* Reduce padding y margenes en links para mejor adaptabilidad */
-  .navbar-nav .nav-link {
-    padding: 10px 0;
-    font-size: 14px;
-  }
-
-  .navbar-nav {
-    text-align: center;
-  }
-}
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 576px) { /* Ajuste para pantallas más pequeñas, típicamente móviles */
-  #logo {
-    width: 90px; /* Reduce el tamaño del logo */
-    height: 60px;
-  }
-
-  #colornav1 {
-    font-size: 12px;
-    text-align: center;
-    line-height: 1.2;
-  }
-
-  /* Ajusta el botón de hamburguesa y su alineación */
-  #hamburger-toggler {
-    margin-left: auto;
-  }
-
-  /* Modifica el menú colapsado para pantallas más pequeñas */
-  .navbar-collapse {
-    
-    padding: 15px;
-  }
-
-  /* Ajusta el estilo de los enlaces en dispositivos móviles */
-  .navbar-nav .nav-link {
-    color: white !important;
-    font-size: 14px;
-    padding: 8px 0; /* Reduce el espaciado */
-  }
-
-  .navbar-nav {
-    text-align: center; /* Centra el texto en el menú desplegable */
-  }
 }
 
 .carousel-overlay {
@@ -178,13 +131,8 @@ height: 200px;
 }
 
 
-#testimonio{
-/* background-color: #D2DDDF;*/
-color: #3E72D6;
-font-size: 26px;
-font-weight: bold;
-display:inline-flex;
-}
+/*TESTIMONIOS*/
+
 .testimonial-card {
 background-color: #D9D9D9;
 color: #fff;
@@ -200,21 +148,6 @@ height: 100px;
 border-radius: 50%;     
 object-fit: cover;      
 }
-/*
-.testimonial-card {
-  background-color: #D1DDDF;
-  color: #fff;
-  text-align: left;
-  padding: 20px;
-  border-radius: 8px;
-  transition: opacity 0.3s ease;
-}
-.testimonial-card {
-  background-color: #D1DDDF;
-  color: #fff;
-  text-align: left;
-}
-*/
 
 .testimonial-content {
 flex: 1;
@@ -240,13 +173,6 @@ color:#4D72D6;
 background-color: #7FACE1 !important;
 }
 
-#testimonio {
-  color: #3E72D6;
-  font-size: 26px;
-  font-weight: bold;
-}
-
-
 .star-rating {
   color: #FFD700;
 }
@@ -264,20 +190,29 @@ background-color: #7FACE1 !important;
   margin-bottom: 20px; /* Agrega margen para separación */
 }
 
-
-
 .star-rating {
   color: #FFD700;
   font-size: 20px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-
 .testimonial-card:hover {
   opacity: 0.9; /* Reducir un poco la opacidad */
 }
 
+.testimonial-name{
+  color: #4D72D6;
+}
+#testimonialCarousel .carousel-indicators button {
+  background-color: #000; /* Color negro */
+  border: none; /* Elimina el borde */
+}
 
+#testimonialCarousel .carousel-indicators button.active {
+  background-color: #444; /* Negro más claro para el botón activo */
+
+}
+/*FIN TESTIMONIOS*/
 
 #foter {
  background-color: #3E72D6;
@@ -288,8 +223,8 @@ color:#3E72D6;
 font-weight: bold;
 }
 #botonfoter:hover{
-background-color: #0d0d0d;
-color:#3E72D6;
+background-color: #d9d9d9;
+color:#000000;
 font-weight: bold;
 }
 
@@ -299,139 +234,125 @@ gap: 10px;
 }
 
 .iconos {
-font-size: 30px;
-cursor: pointer;
-border-radius: 50%;
-background-color: #D2DDDF;
-color: #3E72D6;
-width: 50px; 
-height: 50px; 
-display: flex;
-align-items: center;
-justify-content: center;
+  font-size: 31px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #D2DDDF;
+  color: #3E72D6;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
 }
 
 .iconos:hover {
   background-color: #d9d9d9;
   color: #000000;
 }
-@media (max-width: 768px) {
-  #logofooter {
-    width: 90px; 
-    height: auto;
+
+
+.iconos1 {
+  font-size: 35px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #D2DDDF;
+  color: #3E72D6;
+  width: 75px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+}
+
+.iconos1:hover {
+  background-color: #d9d9d9;
+  color: #000000;
+}
+
+
+
+@media (max-width: 600px) {
+  #foter {
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    justify-content: center;
+    gap: 10px; 
   }
-    .iconos {
-      width: 40px; 
-      height: 40px;
-      margin: 0 3px;
-      font-size:25px;
-    }
+
+  .navbar-brand, .iconos1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto; 
+  }
+
   #botonfoter {
     font-size: 14px;
     padding: 8px 12px;
     width: auto;
-    height: auto;
+  }
+
+  .iconos {
+    width: 40px; 
+    height: 40px;
+    margin: 0 3px;
+    font-size:25px;
+  }
+
+.iconos1 {
+    width: 85px; 
+    height: 40px;
+    margin: 0 3px;
+    font-size:25px;
+  }
+
+  #logofooter {
+    width: 145%; 
+    height: 40px;
   }
 }
 
-/* HOJA 2 INSCRIPCION*/
 
-#mapaubi {
-color:#3E72D6;
-font-size: 26px;
-font-weight: bold;
-}
+@media (max-width: 576px) { 
+  #logo {
+    width: 110px; 
+    height: 50px;
+  }
 
-/* Estilo del título del formulario */
-#form-title {
-  color: #1a73e8;
-  font-weight: bold;
-  font-size: 2rem; /* Tamaño del título aumentado */
-}
+  #colornav1 {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.2;
+  }
 
-/* Contenedor principal */
-#form-container {
-  max-width: 900px; /* Aumentado el ancho máximo */
-  width: 100%;
-}
+  #hamburger-toggler {
+    margin-left: auto;
+  }
 
-/* Estilo de la tarjeta del formulario */
-#form-card {
-  background-color: #d8e2e7; /* Color de fondo del formulario */
-  border-radius: 12px;
-  border: 1px solid #cbd5e0;
-  padding: 40px; /* Aumentado el padding interno */
-}
+  .navbar-collapse {
 
-/* Estilo del texto de las etiquetas */
-#label-nombre,
-#label-apellido,
-#label-telefono,
-#label-email,
-#label-curso,
-#label-domicilio,
-#label-comentarios {
-  color: #1a73e8;
-  font-weight: 500;
+    padding: 15px;
+  }
+
+  .navbar-nav .nav-link {
+    color: white !important;
+    font-size: 14px;
+    padding: 8px 0; 
+  }
+
+  .navbar-nav {
+    text-align: center; 
+  }
+  #main-title{
+    font-size: 35px;
+    color: #3E72D6;
+  }
+
 }
 
-/* Estilo de los campos de entrada */
-#nombre, #apellido, #telefono, #email, #curso, #domicilio, #comentarios {
-  background-color: #ffffff;
-  border: 1px solid #cbd5e0;
-  transition: border-color 0.3s ease;
-}
-
-#nombre:focus, #apellido:focus, #telefono:focus, #email:focus, #curso:focus, #domicilio:focus, #comentarios:focus {
-  border-color: #1a73e8;
-  box-shadow: 0 0 5px rgba(26, 115, 232, 0.3);
-}
-
-/* Estilo del botón de enviar */
-#btn-submit {
-  background-color: #1a73e8;
-  color: white;
-  border: none;
-  padding: 12px 40px; /* Aumentado el tamaño del botón */
-  font-size: 1.1rem; /* Tamaño de fuente aumentado */
-  border-radius: 8px;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-#btn-submit:hover {
-  background-color: #0d5bbf;
-  transform: scale(1.05);
-}
-
-#btn-submit:active {
-  background-color: #094a96;
-}
-
-/* Sombras y bordes para dar un toque más profesional */
-#form-card {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-}
-
-#iconoubi{
-font-size: 23px;
-color: #3E72D6;
-font-weight: bold;
-}
-
-#colornav1{
-color: white;
-font-weight: bold;
-}
-#colornav{
-  color: white;
-  font-weight: bold;
-}
-
-#colornav:hover {
-  color: #1498EB; /* Cambia el color al hacer hover */
-  text-decoration: underline; /* Opcional: subraya el texto en hover */
-  
-}
 
 /*ESTILOS PARA EL MODAL*/
 /* Estilos del botón */
@@ -536,3 +457,49 @@ text-align: center;
 background:linear-gradient(to bottom,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
 }
 /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0) 80% ); /*top*/
+.glow-animation {
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 0, 0.6);
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 0, 0.6);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 1), 0 0 30px rgba(0, 255, 0, 0.8);
+  }
+}
+/* Estilos específicos para el botón de promoción */
+.promo-button {
+  background-color: #3E72D6; /* Color de fondo */
+  color: white; /* Color del texto */
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Suavidad al cambiar el color */
+  text-shadow: none; /* Elimina posibles sombras de texto */
+}
+
+/* Cambio de color al pasar el mouse */
+.promo-button:hover {
+  background-color: #7FACE1; /* Color al pasar el mouse */
+  color: rgb(6, 6, 6); /* Asegura que el texto siga visible */
+}
+
+/* Mantener la animación de brillo verde */
+.glow-animation {
+  box-shadow: 0 0 10px rgb(34, 108, 34), 0 0 20px rgb(63, 128, 63);
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgb(60, 138, 60), 0 0 20px rgba(0, 255, 0, 0.6);
+  }
+  to {
+    box-shadow: 0 0 20px rgb(48, 136, 48), 0 0 30px rgba(0, 255, 0, 0.8);
+  }
+}

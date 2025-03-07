@@ -1,3 +1,8 @@
+*{
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style:normal;
+}
 
 #foter {
   background-color: #3E72D6;
@@ -10,8 +15,8 @@
 }
 
 #botonfoter:hover {
-  background-color: #0d0d0d;
-  color: #3E72D6;
+  background-color: #d9d9d9;
+  color: #000000;
   font-weight: bold;
 }
 
@@ -30,8 +35,8 @@
 }
 
 .iconos:hover {
-  background-color: #000000;
-  color: #3E72D6;
+  background-color: #d9d9d9;
+  color: #000000;
 }
 
 .iconos1 {
@@ -45,13 +50,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 150px;
 
 }
+
 .iconos1:hover {
-  background-color: #000000;
-  color: #3E72D6;
+  background-color: #d9d9d9;
+  color: #000000;
 }
 
+#navintec{
+background-color: #7FACE1 !important;
+}
 .navbar .dropdown-menu {
   background-color: #1498EB;
   border: none; 
@@ -71,8 +81,8 @@
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 576px) { /* Ajuste para pantallas más pequeñas, típicamente móviles */
   #logo {
-    width: 90px; /* Reduce el tamaño del logo */
-    height: 60px;
+    width: 110px; /* Reduce el tamaño del logo */
+    height: 50px;
   }
 
   #colornav1 {
@@ -102,4 +112,162 @@
   .navbar-nav {
     text-align: center; /* Centra el texto en el menú desplegable */
   }
+
+
+
+  #foter {
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    justify-content: center;
+    gap: 10px; 
+  }
+
+  .navbar-brand, .iconos1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto; 
+  }
+
+  #botonfoter {
+    font-size: 14px;
+    padding: 8px 12px;
+    width: auto;
+  }
+
+  .iconos {
+    width: 40px; 
+    height: 40px;
+    margin: 0 3px;
+    font-size:25px;
+  }
+
+  .iconos1 {
+    width: 85px; 
+    height: 40px;
+    margin: 0 3px;
+    font-size:25px;
+  }
+
+  #logofooter {
+    width: 145%; 
+    height: 40px;
+  }
+}
+
+/* HOJA 2 INSCRIPCION*/
+
+#mapaubi {
+color:#3E72D6;
+font-size: 26px;
+font-weight: bold;
+}
+
+/* Estilo del título del formulario */
+#form-title {
+  color: #3E72D6;
+  font-weight: bold;
+  font-size: 2rem; /* Tamaño del título aumentado */
+}
+
+/* Contenedor principal 
+#form-container {
+  max-width: 1000px; 
+}*/
+
+/* Estilo de la tarjeta del formulario */
+#form-card {
+  background-color: #d8e2e7; /* Color de fondo del formulario */
+  border-radius: 12px;
+  border: 1px solid #cbd5e0;
+  padding: 40px; /* Aumentado el padding interno */
+}
+
+#form-card{
+  max-width: 720px;
+}
+
+#form-container {
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;    /* Centrar verticalmente */
+  box-sizing: border-box; /* Considerar el padding en el cálculo del tamaño */
+}
+/*
+#form-card {
+  max-width: 600px;       
+  width: 100%;         
+  margin: auto;           
+  box-sizing: border-box; 
+}*/
+
+/* Estilo del texto de las etiquetas */
+#label-nombre,
+#label-apellido,
+#label-telefono,
+#label-email,
+#label-curso,
+#label-domicilio,
+#label-comentarios {
+  color: #1a73e8;
+  font-weight: 500;
+}
+
+/* Estilo de los campos de entrada */
+#nombre, #apellido, #telefono, #email, #curso, #domicilio, #comentarios {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e0;
+  transition: border-color 0.3s ease;
+}
+
+#nombre:focus, #apellido:focus, #telefono:focus, #email:focus, #curso:focus, #domicilio:focus, #comentarios:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 5px rgba(26, 115, 232, 0.3);
+}
+
+/* Estilo del botón de enviar */
+#btn-submit {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 12px 40px; /* Aumentado el tamaño del botón */
+  font-size: 1.1rem; /* Tamaño de fuente aumentado */
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#btn-submit:hover {
+  background-color: #0d5bbf;
+  transform: scale(1.05);
+}
+
+#btn-submit:active {
+  background-color: #094a96;
+}
+
+/* Sombras y bordes para dar un toque más profesional */
+#form-card {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+#iconoubi{
+font-size: 23px;
+color: #3E72D6;
+font-weight: bold;
+}
+
+#colornav1{
+color: white;
+font-weight: bold;
+}
+#colornav{
+  color: white;
+  font-weight: bold;
+}
+
+#colornav:hover {
+  color: black; /* Cambia el color al hacer hover */
+}
+
+#mapas{
+  border-radius: 9px;
 }
